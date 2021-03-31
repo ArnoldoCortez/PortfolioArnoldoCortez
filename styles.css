@@ -43,13 +43,13 @@ body{
   display: flex;
   justify-content:space-around;
   align-items: center;
-  background-color: #252934;
+  background-color: #ccbb00;
   color: #ffff;
   font-size: 4vw;
 }
 
 span{
-  color: #062ea0;
+  color: #1B242F;
 }
 
 .knowme img{
@@ -70,4 +70,8 @@ section:nth-child(2n + 1){
 .Myname a{
   color: rgb(226,226,226);
   font-size: 2vw;
+}
+
+section h2{
+  font-size: 3vw;
 }
