@@ -18,6 +18,7 @@ body{
   align-items: center;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 .nav-item{
@@ -83,8 +84,6 @@ section h2{
 
 #contact{
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .center {
