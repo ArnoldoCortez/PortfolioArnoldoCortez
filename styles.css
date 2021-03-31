@@ -32,6 +32,10 @@ body{
   font-size: 14px;
 }
 
+.nav-item a:hover{
+  color: #ccbb00;
+}
+
 .nav-item:first-child{
   margin-right: auto;
   margin-left: 2rem;
@@ -46,6 +50,7 @@ body{
   background-color: #ccbb00;
   color: #ffff;
   font-size: 4vw;
+  text-align: center;
 }
 
 span{
@@ -59,8 +64,8 @@ span{
 
 section{
   height: 100vh;
+  width: 100%;
   padding: 5rem;
-  text-align: center;
 }
 
 section:nth-child(2n + 1){
@@ -68,10 +73,105 @@ section:nth-child(2n + 1){
 }
 
 .Myname a{
-  color: rgb(226,226,226);
+  color: #1B242F;
   font-size: 2vw;
 }
 
 section h2{
   font-size: 3vw;
+}
+
+#contact{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.center {
+  position:absolute;
+  background: white;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.center h2{
+  text-align: center;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid silver;
+}
+
+.center form{
+  padding: 0px 40px 20px;
+}
+
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid #ccbb00;
+  margin: 30px 0;
+}
+
+.txt_field input, .txt_field textarea{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.txt_field textarea{
+  height: 80px;
+}
+
+.txt_field input + label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+.txt_field textarea + label{
+  position: absolute;
+  top: 0;
+  left: 5px;
+  color: #adadad;
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top:-5px;
+  color:#ccbb00;
+}
+
+.txt_field textarea:focus ~ label,
+.txt_field textarea:valid ~ label{
+  top:-20px;
+  color:#ccbb00;
+}
+
+input[type="submit"]{
+  width: 100%;
+  height: 50px;
+  border: 1px solid; 
+  border-radius: 20px;
+  font-size: 18px;
+  background: #ccbb00;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="submit"]:hover{
+  border-color: #ccbb00;
+  transition: .5s;
 }
