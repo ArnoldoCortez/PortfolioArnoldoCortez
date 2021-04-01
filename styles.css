@@ -170,7 +170,27 @@ input[type="submit"]{
   outline: none;
 }
 
-input[type="submit"]:hover{
-  border-color: #ccbb00;
-  transition: .5s;
+#about{
+  position: relative;
+}
+
+#about div{
+  border: 3px solid #ccbb00;
+  width: 70%;
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5vw;
+}
+
+#about div p{
+  margin: 2rem;
+}
+
+#about img{
+  width: 10%;
 }
