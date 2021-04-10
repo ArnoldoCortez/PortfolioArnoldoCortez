@@ -2,59 +2,201 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arnoldo Cortez - Software Engineer</title>
-  <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="img/favicon.ico">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- My Styles -->
+  <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-  <header>
-    <nav class = "navbar">
-      <ul class = "nav-list"> 
-        <li class="nav-item logo"><a href="#">Arnoldo Cortez</a></li> 
-        <li class="nav-item"><a href="#about">About</a></li>
-        <li class="nav-item"><a href="#experience">Experience</a></li>
-        <li class="nav-item"><a href="#proyects">Proyects</a></li>
-        <li class="nav-item"><a href="#contact">Contact</a></li>
-        <li class="nav-item"><a target="-blank" href="resume/RESUME_Arnoldo Cortez y Quevedo Cansino.pdf">Resume</a></li>
-      </ul>
-    </nav>
-
-    <section class="knowme">
-      <img src="img/PROFESSIONAL PICTURE.png">
-      <div class="Myname">
-        <p>Hello, I'm <span >Arnoldo Cortez</span>.<br>
-                  I'm a Software Engineer.
-        </p>
-        <a href="https://www.linkedin.com/in/arnoldo-cortez-y-quevedo-cansino" target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a href="https://github.com/ArnoldoCortez" target="_blank"><i class="fa fa-github"></i></a>
+  <nav class="navbar navbar-light navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Arnoldo Cortez</a>
       </div>
-    </section>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyects">Proyects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" target="-blank" href="resume/RESUME_Arnoldo Cortez y Quevedo Cansino.pdf">Resume</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 
-  </header>
+  <section class="container" id="home">
 
-    <section id="about">
-      <div>
-        <h2>About Me</h2>
+        <p class="">Hello, I'm <span >Arnoldo Cortez</span>.<br>
+          I'm a Mechatronics Engineer <br> and Software Developer.
+        </p>
+        <div class="social-icon">
+          <a href="https://www.linkedin.com/in/arnoldo-cortez-y-quevedo-cansino" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://github.com/ArnoldoCortez" target="_blank"><i class="fa fa-github"></i></a>
+      </div>
+      <button type="button" onclick="location.href = '#about';" class="knowme">Know Me</button>
+
+  </section>
+
+  <section class="container" id="about">
+    <div class="about-container">
+      <div class="myPicture">
+        <img src="img/PROFESSIONAL PICTURE.png" alt="this is me">
+      </div>
+      
+      <div class="info">
+        <h1>About</h1>
         <p>
-          Hello! My name is Arnoldo Cortez, Lorem ipsum dolor sit amet consectetur adipisicing elit. In explicabo accusantium excepturi et odio laborum totam voluptate saepe alias, illo, aliquam magni perspiciatis quas. Corporis quas totam quae consequatur vel.  
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quaerat voluptate exercitationem maiores assumenda temporibus deleniti dignissimos nulla aut sunt nihil, amet asperiores vel praesentium illum repudiandae voluptatum excepturi vero.
+          Hello! My name is Arnoldo Cortez, I'm a proactive person who is always looking for
+          new challenges. I enjoy coding and solving dificult problems.
+          I adapt easily, learn fast and always give my best.   
         </p>
-        <img src="img/js.png" alt="">
-        <img src="img/html.png" alt="">
-        <img src="img/nodejs.png" alt="">
-        <img src="img/css.png" alt="">
-        <img src="img/react.png" alt="">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum obcaecati, culpa laboriosam repellat a delectus. Ipsam consequuntur fuga eveniet ut, cupiditate repellendus quasi iusto ea vero quia! Nesciunt, in quos!
+        </p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="experience"><h2>Experience</h2></section>
+  <section class="container" id="experience">
+    <div class="exp-container row">
+      <div class="exp col-sm-12 col-md-6">
+        <h2>Where I've worked</h2>
+        <div class="comp-container">
+          <div class="leoni comp">
+            <img src="img/building.svg" alt="company">
+            <span>-----</span>
+            <span>Leoni Wiring Systems-MMC</span>
+            <p>
+              In charge of programming and operating a CNC milling
+              machine for the production of parts used for the
+              assembly of test modules for BMW electrical harnesses.
+            </p>
+          </div>
+  
+          <div class="Ksquare comp">
+            <img src="img/building.svg" alt="company">
+            <span>-----</span>
+            <span>Ksquare University</span>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque repudiandae ex ullam voluptate debitis odio minima exercitationem repellendus, natus, consequatur numquam incidunt autem expedita obcaecati sapiente maxime consectetur quos tempore.
+            </p>
+          </div>
+        </div>  
+      </div>
+      <div class="skills col-sm-12 col-md-6">
+        <h2>Skills</h2>
+        <img src="img/js.png" alt="javascript">
+        <img src="img/html.png" alt="html">
+        <img src="img/css.png" alt="css">
+        <img src="img/react.png" alt="react js">
+        <img src="img/nodejs.png" alt="node.js">
+        <img src="img/express.js.png" alt="express.js">
+        <img src="img/mySQL.png" alt="mySQL">
+        <img src="img/mongodb.png" alt="mongoDB">
+        <img src="img/aws.png" alt="amazon webServices">
+        <img src="img/git.png" alt="git">
+        <img src="img/npm.png" alt="npm">
 
-    <section id="proyects"><h2>Proyects</h2></section>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-      <div class="center">
-      <h2>Contact Me</h2>
+  <section class="container" id="proyects">
+    <h1>Proyects</h1>
+    <div id="carousel-proyects" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-proyects" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-proyects" data-slide-to="1"></li>
+        <li data-target="#carousel-proyects" data-slide-to="2"></li>
+      </ol>
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+
+        <div class="item active">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <div class="thumbnail">
+                <img src="img/psoc.jpg" alt="...">
+                <div class="caption">
+                  <h3>Morse Code Proyect with a Psoc1</h3>
+                  <p>Development of a morse code infrared transmission
+                    system with a microcontroller, using C and Assembler.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <div class="thumbnail">
+                <img src="img/html.png" alt="...">
+                <div class="caption">
+                  <h3>PC Store Database with C++ and MySQL</h3>
+                  <p>Design of an application for the control and
+                    administration of a PC Store using C++ and MySQL.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <div class="thumbnail">
+                <img src="img/gameOfLife.gif" alt="...">
+                <div class="caption">
+                  <h3>Game of Life with Java</h3>
+                  <p>John Horton Game of Life programming with a graphic
+                    interface using the Eclipse IDE for Java</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+      </div>
+    
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-proyects" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-proyects" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="container" id="contact">
+    <div class="center">
+      <h1>Contact Me</h1>
       <form method="post">
         <div class="txt_field">
           <input id="idName" type="text" required>
@@ -75,8 +217,11 @@
         <input type="submit" value="Send">
       </form>
       </div>
-      
-    </section>
+  </section>
+
+
+  <script src="jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 </html>

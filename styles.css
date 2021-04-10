@@ -1,85 +1,140 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap');
+
 *{
-  margin:0;
+  margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body{
   font-family: 'Raleway', sans-serif;
-}
-
-.nav-list{
-  background-color: #1B242F;
-  box-shadow: 0px 0px 7px;
-  padding: 1rem;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
-
-.nav-item{
-  list-style: none;
-  margin-right: 2rem;
-}
-
-.nav-item a{
-  text-decoration: none;
-  color: rgb(226,226,226);
-  letter-spacing: 3px;
-  font-size: 14px;
-}
-
-.nav-item a:hover{
-  color: #ccbb00;
-}
-
-.nav-item:first-child{
-  margin-right: auto;
-  margin-left: 2rem;
-  letter-spacing: 5px;
-  flex-shrink: 0; 
-}
-
-.knowme {
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
-  background-color: #ccbb00;
-  color: #ffff;
-  font-size: 4vw;
-  text-align: center;
-}
-
-span{
-  color: #1B242F;
-}
-
-.knowme img{
-  border-radius: 8px;
-  width: 20%;
 }
 
 section{
   height: 100vh;
-  width: 100%;
-  padding: 5rem;
+  padding-top: 60px;
+  background-color: rgb(203, 225, 235);
 }
 
-section:nth-child(2n + 1){
-  background-color: #F1F5F8;
+.navbar{
+  background: #1B242F;
 }
 
-.Myname a{
-  color: #1B242F;
-  font-size: 2vw;
+.navbar-toggle span{
+  background: rgb(230, 230, 230);
 }
 
-section h2{
-  font-size: 3vw;
+.navbar-toggle{
+  border-color: rgb(230, 230, 230);
+}
+
+li a{
+  color: rgb(230, 230, 230);
+}
+
+.navbar-brand{
+  color: rgb(230, 230, 230);
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #b9ac14;
+}
+
+#home p{
+  font-size: 40px;
+  text-align: center;
+}
+
+#home i{
+  font-size: 25px;
+  color: rgb(230, 230, 230);
+  margin: 4px;
+}
+
+#home span{
+  color: rgb(230, 230, 230);
+}
+
+#home button{
+  padding: 10px;
+  width: 10em;
+  margin-top: 20px;
+  border: 2px solid rgb(230, 230, 230);
+  background: transparent;
+  outline: inherit;
+  color: rgb(230, 230, 230);
+}
+
+#home button:hover{
+  border:4px solid rgb(230, 230, 230);
+}
+
+#about{
+  position: relative;
+}
+
+.about-container{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 3px solid #b9ac14;
+  padding: 40px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70vw;
+  height: 80%;
+}
+
+.info h1{
+  margin-bottom: 40px;
+}
+
+.info{
+  width: 50%;
+}
+
+.info p{
+  font-size: 16px;
+}
+
+.exp-container .skills img{
+  width: 20%;
+  margin-bottom: 30px;
+}
+
+.exp-container h2{
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.exp img{
+  width: 40px;
+  border: 1px solid #1B242F;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+.comp-container{
+  background: rgb(230, 230, 230);
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.comp{
+  padding: 20px;
+}
+
+.carousel-indicators li{
+  border-color: #1B242F;
+  background: #1B242F;
+}
+
+.carousel-inner img{
+  height: 50vh;
 }
 
 #contact{
@@ -96,9 +151,9 @@ section h2{
   border-radius: 10px;
 }
 
-.center h2{
+.center h1{
   text-align: center;
-  padding: 20px 0 20px 0;
+  padding: 0 0 20px 0;
   border-bottom: 1px solid silver;
 }
 
@@ -109,7 +164,7 @@ section h2{
 form .txt_field{
   position: relative;
   border-bottom: 2px solid #ccbb00;
-  margin: 30px 0;
+  margin: 25px 0;
 }
 
 .txt_field input, .txt_field textarea{
@@ -136,6 +191,7 @@ form .txt_field{
   pointer-events: none;
   transition: .5s;
 }
+
 .txt_field textarea + label{
   position: absolute;
   top: 0;
@@ -168,29 +224,4 @@ input[type="submit"]{
   color: white;
   cursor: pointer;
   outline: none;
-}
-
-#about{
-  position: relative;
-}
-
-#about div{
-  border: 3px solid #ccbb00;
-  width: 70%;
-  height: fit-content;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 1rem;
-  font-size: 1.5vw;
-}
-
-#about div p{
-  margin: 2rem;
-}
-
-#about img{
-  width: 10%;
 }
