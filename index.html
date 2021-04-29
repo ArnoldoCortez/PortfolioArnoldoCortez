@@ -14,10 +14,11 @@
 
   <!-- My Styles -->
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
 
 </head>
 <body>
-  <nav class="navbar navbar-light navbar-fixed-top">
+  <nav class="navbar navbar-fixed-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -36,6 +37,7 @@
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skillsid">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#proyects">Proyects</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           <li class="nav-item"><a class="nav-link" target="-blank" href="resume/RESUME_Arnoldo Cortez y Quevedo Cansino.pdf">Resume</a></li>
@@ -46,14 +48,14 @@
 
   <section class="container" id="home">
 
-        <p class="">Hello, I'm <span >Arnoldo Cortez</span>.<br>
-          I'm a Mechatronics Engineer <br> and Software Developer.
-        </p>
-        <div class="social-icon">
-          <a href="https://www.linkedin.com/in/arnoldo-cortez-y-quevedo-cansino" target="_blank"><i class="fa fa-linkedin"></i></a>
-          <a href="https://github.com/ArnoldoCortez" target="_blank"><i class="fa fa-github"></i></a>
-      </div>
-      <button type="button" onclick="location.href = '#about';" class="knowme">Know Me</button>
+    <p class="">Hello, I'm <span >Arnoldo Cortez</span>.<br>
+      I'm a Mechatronics Engineer <br> and Software Developer.
+    </p>
+    <div class="social-icon">
+      <a href="https://www.linkedin.com/in/arnoldo-cortez-y-quevedo-cansino" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/ArnoldoCortez" target="_blank"><i class="fa fa-github"></i></a>
+    </div>
+    <button type="button" onclick="location.href = '#about';" class="knowme">Know Me</button>
 
   </section>
 
@@ -65,21 +67,22 @@
       
       <div class="info">
         <h1>About</h1>
-        <p>
-          Hello! My name is Arnoldo Cortez, I'm a proactive person who is always looking for
-          new challenges. I enjoy coding and solving dificult problems.
-          I adapt easily, learn fast and always give my best.   
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum obcaecati, culpa laboriosam repellat a delectus. Ipsam consequuntur fuga eveniet ut, cupiditate repellendus quasi iusto ea vero quia! Nesciunt, in quos!
-        </p>
+        <div class="aboutme">
+          <p>
+            Hello! My name is Arnoldo Cortez, I'm a proactive person who is always looking for
+            new challenges. I enjoy coding and solving dificult problems.
+            I adapt easily, learn fast and always give my best.   
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum obcaecati, culpa laboriosam repellat a delectus. Ipsam consequuntur fuga eveniet ut, cupiditate repellendus quasi iusto ea vero quia! Nesciunt, in quos!
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="container" id="experience">
-    <div class="exp-container row">
-      <div class="exp col-sm-12 col-md-6">
+      <div class="exp">
         <h2>Where I've worked</h2>
         <div class="comp-container">
           <div class="leoni comp">
@@ -103,22 +106,22 @@
           </div>
         </div>  
       </div>
-      <div class="skills col-sm-12 col-md-6">
+      <div class="skills" id="skillsid">
         <h2>Skills</h2>
-        <img src="img/js.png" alt="javascript">
-        <img src="img/html.png" alt="html">
-        <img src="img/css.png" alt="css">
-        <img src="img/react.png" alt="react js">
-        <img src="img/nodejs.png" alt="node.js">
-        <img src="img/express.js.png" alt="express.js">
-        <img src="img/mySQL.png" alt="mySQL">
-        <img src="img/mongodb.png" alt="mongoDB">
-        <img src="img/aws.png" alt="amazon webServices">
-        <img src="img/git.png" alt="git">
-        <img src="img/npm.png" alt="npm">
-
+        <div class="skills-icons">
+          <img src="img/js.png" alt="javascript">
+          <img src="img/html.png" alt="html">
+          <img src="img/css.png" alt="css">
+          <img src="img/react.png" alt="react js">
+          <img src="img/nodejs.png" alt="node.js">
+          <img src="img/express.js.png" alt="express.js">
+          <img src="img/mySQL.png" alt="mySQL">
+          <img src="img/mongodb.png" alt="mongoDB">
+          <img src="img/aws.png" alt="amazon webServices">
+          <img src="img/git.png" alt="git">
+          <img src="img/npm.png" alt="npm">
+        </div>
       </div>
-    </div>
   </section>
 
   <section class="container" id="proyects">
@@ -203,10 +206,6 @@
           <label for="idName">Name</label>
         </div>
         <div class="txt_field">
-          <input id="idLastName" type="text" required>
-          <label for="idLastName">Lastname</label>
-        </div>
-        <div class="txt_field">
           <input id="idMail" type="email" required>
           <label for="idMail">Email</label>
         </div>
@@ -218,6 +217,7 @@
       </form>
       </div>
   </section>
+
 
 
   <script src="jquery.js"></script>
