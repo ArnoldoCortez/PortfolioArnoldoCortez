@@ -101,7 +101,6 @@ section {
 }
   
 .about-container{
-    border: 3px solid #b9ac14;
     width: 83vw;
     height: 92%;
     overflow: hidden;
@@ -134,13 +133,13 @@ section {
  
 .info h1{
     margin-top: 12%;
-    padding-left: 17px;
+    padding-left: 30px;
 }
 
 .info .aboutme {
     margin-top: 22px;
-    padding-left: 17px;
-    padding-right: 17px;
+    padding-left: 37px;
+    padding-right: 54px;
 }
 
 .info p{
@@ -163,6 +162,7 @@ section {
 
 .skills-icons {
     width: 300px;
+    
 }
 
 .skills img{
